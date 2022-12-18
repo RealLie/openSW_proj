@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newquestion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="ServerNoticeComponent"></div>
+        <header class="header">
+            <nav class="NewHeaderComponent">
+                <div id="pc-header" class="header-wrapper pc-only none">
+                    <div class="container">
+                        <a href="/index">
+                            <div class="header-logo-col">
+                                <div class="img-box2">
+                                    CQ&A
+                                </div>
+                            </div>
+                        </a>
+                        <div class="header-menu-col">
+                            <div class="menu-outter">
+                                <li class="menu-box off">
+                                    <a class="menu-item" href="/index">Home</a>
+                                </li>
+                                <li class="menu-box on">
+                                    <a class="menu-item" href="/howTo">HowTo</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="header-user-col">
+                            <div class="user-outter">
+                                <a href="/logout">로그아웃</a>
+                                <span>|</span>
+                                <a href="/signup">회원가입</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="article">
+        <div class="HowToTemplate">
+            <div class="container">
+                <div class="howto-main-col">
+                    <div class="HowToContentModuleTemplate">
+                        <div class="left-line"></div>
+                        <div class="ContentHeaderModule">
+                            <div class="how-to-content-header container">
+                                <div>
+                                    <div class="content-header-header">
+                                        <h1 class="question-header"></h1>
+                                    </div>
+                                    <div class="content-intro-wrapper-div">
+                                        <div class="avatar-box"></div>
+                                        <div class="author-date-wrapper"><a href="/userinfo/Favian">
+                                                <div class="author-box">Favian</div>
+                                            </a><label><span class="GradeNickname"
+                                                    style="color: rgb(232, 32, 13);">trenta</span></label>&nbsp;<label>잘살아보세~</label>
+                                            <div class="date-box">2020-06-12<span>&nbsp;|&nbsp; </span>2년전
+                                                <span>&nbsp;|&nbsp; </span><label>조회수1034</label>
+                                            </div>
+                                        </div><span class="report-btn"></span><span id="report-btn">신고</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="how-to-question-box container">
+                                <div class="content-main-row">
+                                    <div class="left-col pc-only">
+                                        <div class="StatsModule pc-only">
+                                            <div class="up-box">
+                                                <div class="up-button" style="color: gray;"></div>
+                                                <div class="likes">4</div>
+                                                <div class="down-button" style="color: gray;">
+                                                    </div>
+                                                        <div id="label">Likes</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-col">
+                                            <div>
+                                                <article class="mark-down-wrapper">
+                                                    <p>안녕하세요! 코린이 입니다!</p>
+                                                    <p>제가 java를 배우고 있는데요!</p>
+                                                    <p>친구들이 javascript가 뭔지 아냐고 했는데.. 잘 몰라서요..</p>
+                                                    <p>혹시 java와 javascript의 차이점이 뭘까요?!</p>
+                                                    <p>java의 연장선인가요?</p>
+                                                    <p>배움이 짧아 여쭤봅니다 ㅠ</p>
+                                                </article>
+                                            </div>
+                                            <div>
+                                                <div class="tag-box"><a class="howto_box_item_tag"
+                                                        href="/howto?tags=Java">Java</a><a class="howto_box_item_tag"
+                                                        href="/howto?tags=Javascript">Javascript</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-wrapper">
+                                    <div class="CommentModule">
+                                        <div class="toggle-row">0개의 댓글 더보기<svg class="MuiSvgIcon-root" focusable="false"
+                                                viewBox="0 0 24 24" aria-hidden="true" role="presentation">
+                                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                                            </svg></div>
+                                        <div></div>
+                                        <div class="collapse"></div>
+                                    </div>
+                                    <div class="comments-input-wrapper">
+                                        <div class="container"><input placeholder="댓글을 입력하세요" id="comment-input"
+                                                type="text" class="form-control" value="">
+                                            <div class="send-col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="AnswersModuleTemplate">
+                                <h5>🙋‍♂️ 3개의 답변이 있어요 </h5>
+                                <div class="HowToAnswerModule">
+                                    <div class="adopt-box"></div>
+                                    <div class="answer-header container">
+                                        <div>
+                                            <div class="content-intro-wrapper-div">
+                                                <div class="avatar-box"><img
+                                                        src="https://storage.googleapis.com/devstu_image/profileReal/2020-09-29/Rq2LrEQoLu5v3rs7Rdsl.png"
+                                                        id="Avatar"></div>
+                                                <div class="author-date-wrapper">
+                                                    <div class="author-box"><a href="/userinfo/Favian">
+                                                            <div class="author-box">Favian</div>
+                                                        </a></div><label><span class="GradeNickname"
+                                                            style="color: rgb(232, 32, 13);">trenta</span></label>&nbsp;<label>잘살아보세~</label>
+                                                </div>
+                                                <div class="adpot-box-wrapper"><span class="report-button"><span
+                                                            id="report-button">신고</span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="answer-content-box container">
+                                            <div class="content-main-row">
+                                                <div class="left-col pc-only">
+                                                    <div class="StatsModule pc-only">
+                                                        <div class="up-box">
+                                                            <div class="up-button" style="color: gray;"></div>
+                                                            <div class="likes">3</div>
+                                                            <div class="down-button" style="color: gray;">
+                                                                << /div>
+                                                                    <div id="label">Likes</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-wrapper">
+                                                <div class="CommentModule">
+                                                    <div class="toggle-row">0개의 댓글 더보기<svg class="MuiSvgIcon-root"
+                                                            focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                                                            role="presentation">
+                                                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">
+                                                            </path>
+                                                        </svg></div>
+                                                    <div>
+                                                        <div class="comment-box"><span
+                                                                id="author">알수없음&nbsp;</span>&nbsp;<span
+                                                                id="content">감사합니다!</span>&nbsp; &nbsp;<span
+                                                                id="date">2년전</span><span
+                                                                class="report-comment-btn"><span
+                                                                    id="report-btn">신고</span></span></div>
+                                                        <div class="comment-box"><span
+                                                                id="author">알수없음&nbsp;</span>&nbsp;<span
+                                                                id="content">감사합니다!</span>&nbsp; &nbsp;<span
+                                                                id="date">2년전</span><span
+                                                                class="report-comment-btn"><span
+                                                                    id="report-btn">신고</span></span></div>
+                                                    </div>
+                                                    <div class="collapse"></div>
+                                                </div>
+                                                <div class="comments-input-wrapper">
+                                                    <div class="container"><input placeholder="댓글을 입력하세요"
+                                                            id="comment-input" type="text" class="form-control"
+                                                            value="">
+                                                        <div class="send-col"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="HowToAnswerModule">
+                                        <div class="adopt-box"></div>
+                                        <div class="answer-header container">
+                                            <div>
+                                                <div class="content-intro-wrapper-div">
+                                                    <div class="avatar-box"><img
+                                                            src="data:image/png;base64,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"
+                                                            id="Avatar"></div>
+                                                    <div class="author-date-wrapper">
+                                                        <div class="author-box">
+                                                            <div class="author-box">알수없음</div>
+                                                        </div><label><span class="GradeNickname"
+                                                                style="color: rgb(117, 117, 118);"></span></label>&nbsp;<label>아직
+                                                            자기소개가 없습니다</label>
+                                                    </div>
+                                                    <div class="adpot-box-wrapper"><span class="report-button"><span
+                                                                id="report-button">신고</span></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="answer-content-box container">
+                                                <div class="content-main-row">
+                                                    <div class="left-col pc-only">
+                                                        <div class="StatsModule pc-only">
+                                                            <div class="up-box">
+                                                                <div class="up-button" style="color: gray;"></div>
+                                                                <div class="likes">0</div>
+                                                                <div class="down-button" style="color: gray;"></div>
+                                                                <div id="label">Likes</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right-col">
+                                                        <div>
+                                                            <article class="mark-down-wrapper">
+                                                                <p>Javascript는 JAVA와 완전히 다른것으로..
+                                                                    윗 분이 client 용 언어라고 기술해주셨지만 그렇기도 하면서도 그렇지 않기도합니다.,..
+                                                                    node js를 통해 런타임에서 동작하게 하여 웹 백엔드로도 사용되고 있는 기술입니다.</p>
+                                                            </article>
+                                                        </div>
+                                                        <div class="date-box">2년전 답변하였습니다</div>
+                                                        <div class="StatsModule mobile-only">
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="likes">0</span>
+                                                            </div>
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="icon"></span>&nbsp; like</div>
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="icon"></span>&nbsp; hate</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-wrapper">
+                                                <div class="CommentModule">
+                                                    <div class="toggle-row">0개의 댓글 더보기</div>
+                                                    <div>
+                                                        <div class="comment-box"><a href="/userinfo/아르셀루팡"><span
+                                                                    id="author">아르셀루팡&nbsp;</span></a>&nbsp;<span
+                                                                id="content">Javascript는 브라우저에서 동적인 화면을 구성하기 위한 언어입니다.
+                                                                처음 만들어졌을
+                                                                당시 이름을 지을 때 그 당시 가장 핫했던 언어가 java였고 JavaScript라고 이름을 지으면
+                                                                개발자들이 더
+                                                                관심을 가질것 같아서 앞에 Java를 붙였다고 해요. Java와는 아무 관련이
+                                                                없습니다.</span>&nbsp;
+                                                            &nbsp;<span id="date">1년전</span><span
+                                                                class="report-comment-btn"><span
+                                                                    id="report-btn">신고</span></span></div>
+                                                    </div>
+                                                    <div class="collapse"></div>
+                                                </div>
+                                                <div class="comments-input-wrapper">
+                                                    <div class="container"><input placeholder="댓글을 입력하세요"
+                                                            id="comment-input" type="text" class="form-control"
+                                                            value="">
+                                                        <div class="send-col"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="HowToAnswerModule">
+                                        <div class="adopt-box"></div>
+                                        <div class="answer-header container">
+                                            <div>
+                                                <div class="content-intro-wrapper-div">
+                                                    <div class="avatar-box"><img
+                                                            src="data:image/png;base64,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"
+                                                            id="Avatar"></div>
+                                                    <div class="author-date-wrapper">
+                                                        <div class="author-box"><a href="/userinfo/아르셀루팡">
+                                                                <div class="author-box">아르셀루팡</div>
+                                                            </a></div><label><span class="GradeNickname"
+                                                                style="color: rgb(117, 117, 118);">bean</span></label>&nbsp;<label>아직
+                                                            자기소개가 없습니다</label>
+                                                    </div>
+                                                    <div class="adpot-box-wrapper"><span class="report-button"><span
+                                                                id="report-button">신고</span></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="answer-content-box container">
+                                                <div class="content-main-row">
+                                                    <div class="left-col pc-only">
+                                                        <div class="StatsModule pc-only">
+                                                            <div class="up-box">
+                                                                <div class="up-button" style="color: gray;"></div>
+                                                                <div class="likes">0</div>
+                                                                <div class="down-button" style="color: gray;"></div>
+                                                                <div id="label">Likes</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right-col">
+                                                        <div>
+                                                            <article class="mark-down-wrapper">
+                                                                <p>Javascript는 브라우저에서 동적인 화면을 구성하기 위한 언어입니다. 처음 만들어졌을 당시
+                                                                    이름을 지을
+                                                                    때 그 당시 가장 핫했던 언어가 java였고 JavaScript라고 이름을 지으면 개발자들이
+                                                                    더 관심을
+                                                                    가질것 같아서 앞에 Java를 붙였다고 해요. Java와는 아무 관련이 없습니다</p>
+                                                            </article>
+                                                        </div>
+                                                        <div class="date-box">1년전 답변하였습니다</div>
+                                                        <div class="StatsModule mobile-only">
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="likes">0</span>
+                                                            </div>
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="icon"></span>&nbsp; like</div>
+                                                            <div class="item" style="color: gray;"><span
+                                                                    id="icon"></span>&nbsp; hate</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-wrapper">
+                                                <div class="CommentModule">
+                                                    <div class="toggle-row">0개의 댓글 더보기</div>
+                                                    <div></div>
+                                                    <div class="collapse"></div>
+                                                </div>
+                                                <div class="comments-input-wrapper">
+                                                    <div class="container"><input placeholder="댓글을 입력하세요"
+                                                            id="comment-input" type="text" class="form-control"
+                                                            value="">
+                                                        <div class="send-col"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="how-to-content margin-top-3 container"></div>
+                                <div class="container"></div>
+                                <div class="how-to-reply-answer-wrapper">
+                                    <h4>답변 달기 🙋‍♂️</h4>
+                                    <div class="reply-answer-wrapper">
+                                        <div class="reply-answer-header">
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item"><a class="active nav-link">작성하기</a></li>
+                                                <li class="nav-item"><a class="nav-link">미리보기</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="reply-answer-main">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="md-helper">
+                                                                <span class="helper-item"></span><span
+                                                                    class="helper-item"></span>
+                                                                <span class="helper-item"></span><span
+                                                                    class="helper-item"></span>
+                                                                <span class="helper-item"></span>
+                                                                <span class="helper-item">
+                                                                    <input type="file" id="hiddenFileInput"
+                                                                        style="display: none;"></span>
+                                                                <span class="helper-item"></span>
+                                                            </div>
+                                                            <textarea id="answer-input" wrap="virtual"
+                                                                placeholder="이 문제의 답변을 적어주세요" type="textarea"
+                                                                style="height: 42px !important;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="margin-top: 14px;">
+                                                        <div class="col-sm-12"><button type="button"
+                                                                class="btn btn-info"
+                                                                style="font-size: 14px;">답변달기✔</button></div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="reply-wrapper">
+                                                                <article class="mark-down-wrapper"></article>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12"><button type="button"
+                                                                class="btn btn-info">답변달기✔</button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ReportModule"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

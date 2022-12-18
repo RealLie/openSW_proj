@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newquestion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body{
+            background-color: #f5f5f5;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="ServerNoticeComponent"></div>
+        <header class="header">
+            <nav class="NewHeaderComponent">
+                <div id="pc-header" class="header-wrapper pc-only none">
+                    <div class="container">
+                        <a href="/index">
+                            <div class="header-logo-col">
+                                <div class="img-box2">
+                                    CQ&A
+                                </div>
+                            </div>
+                        </a>
+                        <div class="header-menu-col">
+                            <div class="menu-outter">
+                                <li class="menu-box off">
+                                    <a class="menu-item" href="/index">Home</a>
+                                </li>
+                                <li class="menu-box on">
+                                    <a class="menu-item" href="/howTo">HowTo</a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="header-user-col">
+                            <div class="user-outter">
+                                <a href="/logout">로그아웃</a>
+                                <span>|</span>
+                                <a href="/signup">회원가입</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <form action="/write" method="POST">
+        <section class="article">
+            <div class="NewQuestionPageTemplate">
+                <div class="container">
+                    <div class="header-area">
+                        <h4>새 질문 작성하기</h4>
+                    </div>
+                    <div class="user-input-area">
+                        <div class="NewQuestionHeaderComponent">
+                            <div class="title-input-box">
+                                <div class="check-point">
+                                    <div class="check-label none">제목</div>
+                                    <div class="warining">: 제목을 15자 이상으로 입력해주세요</div>
+                                </div><input id="title-input" name="title" type="text" placeholder="질문 제목을 입력해주세요"
+                                    value="">
+                            </div>
+                            <div class="title-input-box">
+                                <div class="check-point">
+                                    <div class="check-label none">태그</div>
+                                    <div class="warining">: 태그를 입력해주세요(EX.java)</div>
+                                </div>
+                                <input id="title-input" name="tag" type="text" placeholder="태그를 입력해주세요" value="">
+                            </div>
+                        </div>
+                        <h5>
+                            <div class="check-point">
+                                <div class="check-label none">본문</div>
+                                <div class="warining">: 최소 20자 이상의 질문을 입력해주세요</div>
+                            </div>
+                        </h5>
+                        <div class="editor-area">
+                            <div class="NewQuestionEditorComponent">
+                                <div class="header">
+                                    <div class="header-label">글쓰기</div>
+                                </div>
+                                <div class="eidtor">
+                                    <div class="md-helper"><span class="helper-item">
+                                        </span><span class="helper-item">
+                                            <input type="text" name="" id="hiddenFileInput" style="display: none;">
+                                        </span>
+                                            <span class="helper-item"></span>
+                                        </div>
+                                    <textarea id="md-input" name="contents" type="textarea" style="height: 45px !important;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-area">
+                            <div class="NewQuestionSubmitModule">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <button class="btn btn-secondary">나가기</button>
+                                    <button type="submit" class="btn btn-info text-white">질문 올리기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
